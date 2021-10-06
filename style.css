@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  top: 0;
+
+  left: 0;
+  background: url("./lucifer.jpg") no-repeat center center/cover;
+  z-index: -10;
+}
+body {
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  color: rgb(255, 255, 255);
+  padding: 2rem;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container > * {
+  font-size: 30px;
+  z-index: 30;
+  margin: 2rem;
+}
+
+.btn {
+  border: none;
+  padding: 1rem;
+  font-size: 20px;
+  margin: auto;
+  color: rgb(255, 255, 255);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background: transparent;
+}
+.btn:hover {
+  cursor: pointer;
+  background: #fff;
+  color: rgb(8, 19, 19);
+}
